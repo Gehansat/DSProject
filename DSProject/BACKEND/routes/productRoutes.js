@@ -67,7 +67,7 @@ router.get('/:id', async(req, res)=> {
     res.status(400).send(e.message);
   }
 });
-/*
+
 router.get('/category/:category', async(req,res)=> {
   const {category} = req.params;
   try {
@@ -84,6 +84,7 @@ router.get('/category/:category', async(req,res)=> {
   }
 })
 
+/*
 // cart routes
 
 router.post('/add-to-cart', async(req, res)=> {
