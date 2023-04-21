@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import categories from '../categories';
 import { LinkContainer } from 'react-router-bootstrap';
 import "./Home.css";
-import axios from 'axios';
+import axios from '../axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateProducts } from '../features/productSlice';
 import ProductPreview from '../components/ProductPreview';
@@ -14,6 +14,7 @@ function Home() {
     const dispatch = useDispatch();
     const products = useSelector((state) => state.products);
     const lastProducts = products.slice(0, 8);
+
     useEffect(() => {
         axios.get("/products").then(({ data }) => dispatch(updateProducts(data)));
     }, []);
