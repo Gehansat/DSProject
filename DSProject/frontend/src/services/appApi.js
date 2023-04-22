@@ -97,14 +97,14 @@ export const appApi = createApi({
 export const {
     useSignupMutation,
     useLoginMutation,
-    useCreateProductMutation/*,
+    useCreateProductMutation,/*
     useAddToCartMutation,
     useRemoveFromCartMutation,
     useIncreaseCartProductMutation,
     useDecreaseCartProductMutation,
-    useCreateOrderMutation,
+    useCreateOrderMutation,*/
     useDeleteProductMutation,
-    useUpdateProductMutation,*/
+    useUpdateProductMutation,
 } = appApi;
 
 export default appApi;

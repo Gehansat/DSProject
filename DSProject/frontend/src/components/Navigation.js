@@ -19,7 +19,7 @@ function Navigation() {
 
 
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
       <Container>
 
         <LinkContainer to="/">
@@ -64,7 +64,7 @@ function Navigation() {
               {user.isAdmin && (
                 <>
 
-                  <LinkContainer to="/dashboard">
+                  <LinkContainer to="/admin">
                   <NavDropdown.Item >Dashboard</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to="/new-product">
